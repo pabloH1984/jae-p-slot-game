@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jae-P Vegas Slot Machine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="slot-machine">
+    <!-- Flash win effects -->
+    <div id="win-effect-container"></div>
+
+    <!-- Banner image -->
+    <div class="top-banner">
+      <img src="assets/img/banner.jpg" alt="Jae-P Slot Banner" />
+    </div>
+
+    <!-- Slot reels -->
+    <div class="reels">
+      <div class="reel" id="reel1"></div>
+      <div class="reel" id="reel2"></div>
+      <div class="reel" id="reel3"></div>
+    </div>
+
+    <!-- Buttons + bet info -->
+    <div class="controls">
+      <button id="spin-btn" onclick="spin()">🎰 SPIN 🎰</button>
+      <div class="bet-controls">
+        <button onclick="decreaseBet()">➖</button>
+        <div id="bet">Bet: $1</div>
+        <button onclick="increaseBet()">➕</button>
+      </div>
+      <div id="winnings">Winnings: $0</div>
+    </div>
+
+    <!-- Background music -->
+    <audio id="bg-music" loop autoplay>
+      <source src="assets/music/sample.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
