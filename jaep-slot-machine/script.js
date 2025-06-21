@@ -123,6 +123,13 @@ function triggerWinEffect() {
         new Audio('assets/sfx/ya-se-hizo.mp3').play();
     }, 700);
 }
+function pullLever() {
+    document.querySelector('.lever-ball').style.transform = 'translateY(20px)';
+    setTimeout(() => {
+        document.querySelector('.lever-ball').style.transform = 'translateY(-5px)';
+        spin(); // trigger the spin!
+    }, 300);
+}
 
 
 
